@@ -1,0 +1,115 @@
+html {box-sizing: border-box;}
+*, *::before, *::after {box-sizing: inherit;}
+
+body {
+    font-family: 'Permanent Marker', cursive;
+    background: url('https://digitalsynopsis.com/wp-content/uploads/2017/02/beautiful-color-gradients-backgrounds-075-clean-mirror.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title {
+    text-align: center;
+    font-size: 70px;
+    position: relative;
+    top: 50px;
+    font-weight: bold;
+}
+
+.overlay-text {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    font-weight: bold;
+    z-index: 10;
+    color: grey;
+}
+.overlay-text-small {
+    font-size: 80px;
+}
+.overlay-text.visible {
+    display: flex;
+    flex-direction: column;
+    animation: overlay-grow 500ms forwards;
+}
+@keyframes overlay-grow{
+    from {
+        background-color: rgba(0,0,0,0);
+        font-size: 0  
+    } to {
+        background-color: rgba(0,0,0,.9);
+        font-size: 150px;
+    }
+}
+#memory-game {
+    width: 1500px;
+    min-height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    perspective: 500px;
+}
+#gameinfo {
+    height: 100px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 250px;
+    justify-content: space-between;
+    font-size: 30px;
+}
+#deck {
+    margin-left: 200px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1100px;
+    height: 100%;
+}
+.card {
+    height: 200px;
+    width: 170px;
+    margin-bottom: 25px;
+}
+.card.visible #frontface {
+    transform: rotateY(-180deg)
+}
+.card.visible #backface {
+    transform: rotateY(0deg)
+}
+img {
+    height:220px;
+    width: 180px;
+}
+#backface  {
+    transform: rotateY(180deg);
+}
+#frontface {
+    font-size: 100px;
+    background: black;
+
+
+}
+#backface, #frontface {
+    position: absolute;
+    height: 220px;
+    width: 180px;
+    backface-visibility: hidden;
+    transition: transform 500ms ease-in-out;
+    cursor: pointer;
+}
+i {
+    color: white;
+    font-size: 80px;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 20%;
+    margin-top: 30%;
+
+}

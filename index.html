@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/118c0dc5a0.js"></script>
+</head>
+
+<body>
+    <h1 class="title">Memory Game</h1>
+    <div class="overlay-text visible">Click to Begin</div>
+    <div id="victorytext" class="overlay-text victorytext">You Win!<span class="overlay-text-small">click to restart</span></div>
+    <div id="gamovertext" class="overlay-text gameovertext">You Lose! <span class="overlay-text-small">click to restart</span></div>
+    <div id="memory-game">
+        <div id="gameinfo">
+            <div id="lives">
+                Clicks: <span id="flips">0</span>
+            </div>
+            <div id="timer">
+            Timer: <span id="time-remaining">80</span>
+            </div>
+        </div>
+        <div id="deck">
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (1).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (2).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (3).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (4).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (5).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (6).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (7).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (8).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS.jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (1).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (2).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (3).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (4).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (5).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (6).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (7).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS (8).jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+            <div class="card">
+                <div id="backface"><img class="value" src="./images/Image from iOS.jpg"></div>
+                <div id="frontface"><i id="qmark" class="far fa-question-circle"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>
